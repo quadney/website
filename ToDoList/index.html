@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<title>Sydney Richardson's To-Do List Web App {Beta}</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="css/screen_medium.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="css/screen_small.css">
+		<script src="script/jquery-2.0.3.js"></script>
+		<script src="script/main.js"></script>
+		
+				<!--[if lt IE 9]> 
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="main">
+			<header>
+				<nav>
+					<h1>To-Do List App</h1>
+				</nav>
+			</header>
+			<div class="content">
+				<div id="left_menu" class="shadow">
+					<div id="userInfo" class="hide"></div>
+					<div id="logout" class="hide">Logout</div>
+					<ul id="toDoListSelect" class="hide">
+						<li id="createNewList"><h4>Create New List</h4></li>
+						<li>Default List<div class="delete"></div></li>
+						<li>Sydney<div class="delete"></div></li>
+					</ul>
+				</div>
+				<div class="remindersContainer">
+					<div id="inputContainer">
+						<div class="menu_button"></div>
+						<input id="reminderInput" type= "text" maxLength= "100" placeholder= "I can't forget..." value=""/>
+					</div>
+					<div id="reminderList">
+						<ul id="showList" class="hide">
+							<li><input type="checkbox"><label>This is a reminder!</label></li>
+							<li><input type="checkbox"><label>Type in the box and press Enter</label></li>
+							<li><input type="checkbox"><label>Check the box when you're finished with the task</label></li>
+							<li><input type="checkbox"><label>Click the Red menu button to see more to-do lists</label></li>
+							<li><input type="checkbox"><label>This web app is also responsive! It is also designed for mobile and tablets!</label></li>
+							<li><input type="checkbox"><label>To Do: connect with a database to save lists and items</label></li>
+							<li><input type="checkbox"><label>To Do: connect with Facebook so sharing of lists is possible, and using a profile image from Facebook</label></li>
+							<li><input type="checkbox"><label>To Do: Possibility of being a chrome app!</label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="overlay">
+				<div id="overlayCard" align: "center">
+					<h1>To Do List App</h1>
+					<div id="overlayLogin" align="center">
+						<h66>Login</h66><br><br>
+						<h77 id="create" >Click here to create an account</h77>
+						<br>
+						<input class="username" type="text" maxLength="50" placeholder="Username" value=""/>
+						<input class="password" type="password" maxLength="50" placeholder="Password" value=""/>
+						<div class="submitButton" align="center"><h3>Submit</h3></div>
+					</div>
+	
+					<div id="overlayCreate" align="center" class="hide">
+						<h66>Create an Account</h66><br><br>
+						<h77 id="create2" >Already have an account?</h77><br>
+						<input class ="name" type="text" maxLength="50" placeholder="Name" value=""/><br>
+						<input class="username" type="text" maxLength="50" placeholder="Username" value=""/><br>
+						<input class="password" type="password" maxLength="50" placeholder="Password" value=""/><br>
+						<div class="submitButton" align="center"><h3>Submit</h3></div>
+					</div>
+				</div>
+			</div>
+			<footer align="center">
+				<h3>&copy; 2013 Sydney Richardson</h3>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+h1{ /*this is the main header*/
+	font-size: 3em;
+	text-align: center;
+	margin: 0 0 10px;
+}
+h2{ /*these are the nav headings*/
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+}
+h3{
+	padding: 10px 10px;
+	font-size: 1.5em;
+}
+p{ /*this is the serif font*/
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	text-align: justify;
+	width: 600px;
+	text-indent: 20px;
+}
+header{
+	height: 120px;
+}
+nav{
+	display: inline-block;
+	margin: 10px 0px;
+	text-align: center;
+}
+nav a{
+	font-size: 1.2em;
+	padding: 7px 10px;
+}
+.content{
+	top: 121px;
+	position: relative;
+	margin: 0px;
+}
+.paragraph{
+	width:  700px;
+	position: relative;
+	margin: 10px 0px 40px;
+}
+
+#resume .paragraph{
+	width: 650px;
+}
+
+#projects #todolist { background: url("../images/project_banner_01.png") 0px 45px no-repeat; }
+#projects #papercuts{background: url("../images/project_banner_02.png") 0px 45px no-repeat; }
+#projects #library { background: url("../images/project_banner_03.png") 0px 45px no-repeat; }
+#projects #fractal { background: url("../images/project_banner_04.png") 0px 45px no-repeat; }
+#projects #artwork { background: url("../images/project_banner_05.png") 0px 45px no-repeat; }

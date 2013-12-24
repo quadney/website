@@ -1,0 +1,70 @@
+h1{ /*this is the main header*/
+	font-size: 2.3em;
+	text-align: center;
+	margin: 0 0 10px;
+}
+h2{ /*these are the nav headings*/
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+}
+h3{
+	font-size: 1.5em;
+	padding: 10px;
+}
+p{ /*this is the serif font*/
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	text-align: justify;
+	width: 92%;
+	text-indent: 20px;
+}
+header{
+	height: 150px;
+}
+nav{
+	display: block;
+	height: 250px;
+}
+nav a{
+	font-size: 1em;
+	width: 100%;
+	line-height: 37px;
+	padding: 7px 10px;
+}
+.content{
+	top: 151px;
+	position: relative;
+	margin: 0px;
+}
+.paragraph{
+	width:  100%;
+	position: relative;
+}
+#resume .paragraph{
+	width: 100%;
+}
+#projects .project_content{
+	width: 95%;
+}
+#projects #todolist { background-position: center 45px; }
+#projects #papercuts{background-position: center 45px; }
+#projects #library { background-position: center 45px; }
+#projects #fractal { background-position: center 45px; }
+#projects #artwork { background-position: center 45px; }
+#manifesto .paragraph{
+	height: 950px;
+}
+.manifest_content{
+	width: 92%;
+	height: 90px;
+}
+#contact .paragraph {
+	height: 275px;
+}
+#contact_me{
+	width: 210px;
+}
+#github, #googlePlus, #linkedin, #gmail{
+	margin-bottom: 25px;
+}

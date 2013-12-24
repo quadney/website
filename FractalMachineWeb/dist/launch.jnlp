@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>FractalMachineWebTake2</title>
+        <vendor>Sydney Richardson</vendor>
+        <homepage href=""/>
+        <description>FractalMachineWebTake2</description>
+        <description kind="short">FractalMachineWebTake2</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.7+"/>
+        <jar href="FractalMachineWebTake2.jar" main="true"/>
+    <jar href="lib/swing-layout-1.0.4.jar"/>
+<jar href="lib/beansbinding-1.2.1.jar"/>
+</resources>
+    <applet-desc height="550" main-class="finalProject.TheFractalMachine" name="FractalMachineWebTake2" width="1025">
+    </applet-desc>
+</jnlp>

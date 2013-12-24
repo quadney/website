@@ -1,0 +1,323 @@
+
+html{
+	overflow-x: hidden;
+}
+body{
+	top:  0;
+	bottom:  0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	right: 0;
+	left: 0;
+	position: relative;
+	margin: 0px;
+}
+
+h1, h2, h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size:  2em;
+	color: black;
+	background-color: white;
+}
+
+h3{ /*these are the headings of the main content*/
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 15px 10px;
+	text-align: center;
+	margin: 0px;
+}
+h4{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+h5{ /*these are the headings of inside the main content*/
+	padding: 10px 0px 10px 10px;
+	font-weight: 400;
+	position: relative;
+	font-size: 1.3em;
+	text-align: left;
+	margin: 0px 0px 5px;
+}
+p2{
+	margin-bottom: .6em;
+	position: relative;
+	font-weight: 300;
+}
+p3{
+	margin-bottom: .6em;
+	position: relative;
+	font-weight: 700;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background-color:  white;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	position:  fixed;
+	box-shadow: 0 1px 3px #151513;
+}
+nav{
+	text-align: center;
+	position: relative;
+	width:  100%;
+	margin: 10px 0px;
+	padding-bottom: 20px;
+}
+nav a{
+	color:  black;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: white;
+}
+nav a:hover{
+	font-weight: 400;
+}
+
+.about{ background-color: #f4c1b1; }
+.about:hover{ color: #852d12; }
+.resume{ background-color: #f9e9af; }
+.resume:hover{ color: #b16a0f; }
+.projects{ background-color: #d9fadc; }
+.projects:hover{ color: #087912; }
+.manifesto{ background-color: #d7effa; }
+.manifesto:hover{ color: #086a97; }
+.contact{ background-color: #e7d9fa; }
+.contact:hover{ color: #530890; }
+
+
+.stuff{
+	position: relative;
+}
+.paragraph{
+	margin: 10px 0px 40px;
+}
+.paragraph p{
+	display:  block;
+	top: 0px;
+	margin: 5px 0 20px;
+}
+#about .paragraph p{
+	margin-left: 0px;
+}
+.paragraph a{
+	text-decoration: none;
+	color: #009eff;
+}
+.paragraph a:hover{
+	color: #7e12b3;
+}
+.inside{
+	padding: 5px 10px 20px 20px;
+	font-family: 'Roboto Slab', serif;
+	text-align: left;
+}
+.paragraph h4{
+	padding: 5px 5px 0;
+}
+#about h3{
+	background-color: #f4c1b1;
+}
+#resume h3{
+	background-color: #f9e9af; 
+}
+#resume h5{
+	border-bottom: 1px solid #afafaf;
+}
+
+#downloadResume{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 1px 5px #b16a0f;
+	-moz-box-shadow: 0px 1px 5px #b16a0f;
+	-webkit-box-shadow: 0px 1px 5px #b16a0f;
+	background-color: #f9e9af;
+	border: 1px solid #b16a0f;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+	font-weight: 300;
+	color: black;
+}
+#downloadResume:hover{
+	color: #b16a0f;
+	font-weight: 400;
+	background-color: #fdf7e2;
+}
+.launchButton{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 1px 5px #087912;
+	-moz-box-shadow: 0px 1px 5px #087912;
+	-webkit-box-shadow: 0px 1px 5px #087912;
+	background-color: #d9fadc;
+	border: 1px solid #087912;
+	padding: 15px 20px;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 30px;
+}
+.launchButton:hover{
+	background-color: #d9fadc;
+	color: #087912;
+	font-weight: 400;
+}
+#projects h3{
+	background-color: #d9fadc;
+}
+#projects .project_content{
+	width: 95%;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #087912;
+	margin: 40px 0 20px;
+}
+#projects .project_content a{
+	color: black;
+}
+#projects h4{
+	padding: 0 0px 0 10px;
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: left;
+	font-weight: 400;
+}
+#projects p{
+	margin: 135px 0 30px;
+	line-height: 1.4em;
+}
+
+#manifesto h3{
+	background-color: #d7effa;
+}
+#manifesto h5{
+	border-bottom: 1px solid #afafaf;
+}
+#contact h3{
+	background-color: #e7d9fa;
+}
+#contact h4{
+	font-size: 1.2em;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: none;
+	margin-bottom: 0px;
+}
+.manifest_content{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 1px 5px black;
+	-moz-box-shadow: 0px 1px 5px black;
+	-webkit-box-shadow: 0px 1px 5px black;
+	margin: 8px;
+	position: relative;
+	float: left;
+}
+.manifest_content:hover{
+	background-color: #eff8fd;
+}
+.manifest_content:active{
+	background-color: #d7effa;
+	box-shadow: inset 0px 1px 5px black;
+	-moz-box-shadow: inset 0px 1px 5px black;
+	-webkit-box-shadow: inset 0px 1px 5px black;
+}
+.manifest_content h4{
+	padding: 20px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: 400;
+	font-family: 'Roboto Slab', serif;
+}
+#manifesto .explain{
+	background-color: #eeeeee;
+	box-shadow: inset 0px 1px 5px black;
+	-moz-box-shadow: inset 0px 1px 5px black;
+	-webkit-box-shadow: inset 0px 1px 5px black;
+	width: 100%;
+	height: 200px;
+	float: left;
+	position: relative;
+	margin: 6px 0px;
+	padding-top: 5px;
+}
+#contact .paragraph{
+	height: 400px;
+}
+#contact_me{
+	position: relative;
+	width: 420px;
+	height: 120px;
+}
+#github{
+	background: url("../images/github.png") 5px 5px no-repeat;
+	margin: 10px;
+	width: 85px;
+	height: 85px;
+	position: relative;
+	float: left;
+}
+#linkedin{
+	background: url("../images/linkedin.png") 5px 5px no-repeat;
+	margin: 10px;
+	width: 85px;
+	height: 85px;
+	position: relative;
+	float: left;
+}
+#gmail{
+	background: url("../images/gmail.png") 5px 5px no-repeat;
+	margin: 10px;
+	width: 85px;
+	height: 85px;
+	position: relative;
+	float: left;
+}
+#googlePlus{
+	background: url("../images/googleplus.png") 5px 5px no-repeat;
+	margin: 10px;
+	width: 85px;
+	height: 85px;
+	position: relative;
+	float: left;
+}
+#github:hover, #gmail:hover, #linkedin:hover{
+	background-color: #d7d7d7;
+}
+#contact_me h5{
+	padding: 85px 0 0;
+	text-align: center;
+	font-weight: 300;
+	margin: 0;
+}
+footer{
+	bottom: 0;
+	margin: 5px 0;
+	height: 45px;
+	width: 100%;
+	background-color: #eaeaea;
+}
+footer h5{
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 100;
+	font-size: 1em;
+	
+}
+.hide{
+	display: none;
+}

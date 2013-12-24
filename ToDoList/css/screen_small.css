@@ -1,0 +1,42 @@
+#left_menu{
+	width: 0%;
+	height: 100%;
+	background-color:#585858;
+	margin: 0px;
+	float: left;
+	z-index: 1;
+}
+
+#overlayCard{
+	width: 90%;
+	height: 350px;
+	left: 5%;
+	top: 100px;
+}
+#overlayCard h1{
+	font-size: 1.5em;
+	padding: 20px 15px 10px 15px;
+}
+#overlay h66 {
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	padding: 0px 15px;
+	border-bottom: 1px inset #9a9a9a;
+}
+#overlay h77{
+	font-size: .9em;
+}
+.submitButton{
+	font-size: 1.2em;
+}
+
+.remindersContent{
+	float:left;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+#reminderInput{
+	width: 235px;
+}

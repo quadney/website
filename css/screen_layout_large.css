@@ -1,0 +1,73 @@
+h1{ /*this is the main header*/
+	font-size: 4em;
+	text-align: center;
+	margin: 0px 0 10px;
+}
+h2{ /*these are the nav headings*/
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+}
+p{ /*this is the serif font*/
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	text-align: justify;
+	width: 700px;
+	text-indent: 20px;
+}
+header{
+	height: 180px;
+}
+nav{
+	display: inline-block;
+}
+nav a{
+	font-size: 1.5em;
+}
+.content{
+	top: 180px;
+	position: relative;
+	margin: 0px;
+}
+.paragraph{
+	width:  800px;
+	position: relative;
+}
+
+#resume .paragraph{
+	width: 800px;
+}
+#projects #todolist { 
+	background-image: url("../images/project_banner_01.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px;
+}
+#projects #papercuts{
+	background-image: url("../images/project_banner_02.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
+#projects #library { 
+	background-image: url("../images/project_banner_03.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
+#projects #fractal { 
+	background-image: url("../images/project_banner_04.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
+#projects #artwork { 
+	background-image: url("../images/project_banner_05.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
+
+#manifesto .paragraph{
+	height: 350px;
+}
+
+.manifest_content{
+	width: 31%;
+	height: 100px;
+}

@@ -1,0 +1,231 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<title>Papercuts Video Game</title>
+	<link rel="stylesheet" type="text/css" href="papercuts.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'/>
+	<script src="../scripts/jquery-2.0.3.js"></script>
+	
+	<!--[if lt IE 9]> 
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	<script type="text/javascript">
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+	</script>
+	<script type="text/javascript">
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "websitePapercuts.unity3d");
+			});
+	</script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script src="scripts/stellar.js"></script>
+	<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<ul id="scene">
+		<li class="layer" data-depth="0.00"><img id="background" src="images/parallax/backyard2.png"></li>
+		<li class="layer" data-depth="0.10"><img id="fire" src="images/parallax/fire2.png"></li>
+		<li class="layer" data-depth="0.20"><img id="witch" src="images/parallax/witch.png"></li>
+		<li class="layer" data-depth="0.40"><img id="dad" src="images/parallax/dad.png"></li>
+  		<li class="layer" data-depth="0.40"><img id="becca" src="images/parallax/becca.png"></li>
+  		<li class="layer" data-depth="0.60"><img id="pug" src="images/parallax/pug.png"></li>
+  		<li class="layer" data-depth="0.80"><img id="tess" src="images/parallax/tess.png"></li>
+  		<li class="layer" data-depth="1.00"><img id="rip" src="images/parallax/rip2.png"></li>
+	</ul>
+
+
+	<header>
+		<a name="papercuts_logo" id="logo" href="#"></a>
+		<nav>
+			<a href="#play">Play</a>
+			<a href="#storyline">Story Line</a> 
+			<a href="#demoday">Demo Day</a> 
+			<a href="#digisquid">Developers</a>
+		</nav>
+	</header>
+
+	<div id='filler'></div>
+	<div class="photo photo1" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+
+	<div class="main-content">			
+ 		<div id="tshirt"></div>
+ 	</div>
+ 	<div class="photo photo2" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+
+ 	<div class="main-content">
+		<div id="play" align="center">
+			<h2>Play Papercuts</h2>
+			
+			<div id="unityPlayer" align="center">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+				<div class="broken">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+			<div id="tooSmall">
+				<h3>Visit this page on a computer to play Papercuts! Or increase screen width of your browser :)</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="photo photo3" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+	<div class="main-content">
+		<div id="storyline" align="center">
+			<h2>Storyline</h2>
+			<div class="paragraph">
+				<p>Papercuts is the story of Ripley, a sick boy with a vivid imagination, and his paper creation - Rip, the boy with a box for a head.</p>
+				<p>One night when Ripley's sickness is particularly painful, Rip comes to life in his dream, except this dream is more of a nightmare! In this paper world dream, the evil Paper Witch has taken Ripley's parents, dog, and soon-to-be-friend.</p>
+				<p>Play as Rip to cut and snip your way through Ripley's house with the help of your trusty scissors, in order to save the boy's loved one's, and ultimately yourself.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="photo photo4" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+
+	<div class="main-content">
+		<div id="demoday" align="center">
+			<h2>Demo Day</h2>
+			<div class="left_Paragraph">
+				<p>Papercuts was presented to the public on April 21, 2013 in the Computer Science and Engineering Building at the University of Florida, as part of "CISE Day". Many other projects were presented, such as other games from our class, Theory and Production of Digital Arts and Sciences, and AI for Computer Games.</p>
+				<p>As user's approached Papercuts, they would play the game inside the head of Rip, and the first 10 players to finish the game received a hand-printed Papercuts t-shirt.</p>
+			</div>
+			<div class="slideshowContainer">
+				<div id="slideshow">
+					<img src="images/demoday/demoday1.jpg" alt="The setup at Demo Day: Poster, T-Shirts, Packaging, and model Rip">
+					<img src="images/demoday/demoday2.jpg" class="hide" alt="Jonathan wearing Papercuts T-Shirt">
+					<img src="images/demoday/demoday3.jpg" class="hide" alt="User playing Papercuts">
+					<img src="images/demoday/demoday4.jpg" class="hide" alt="Tarif playing Papercuts">
+					<img src="images/demoday/demoday5.jpg" class="hide" alt="Jonathan with model Rip">
+					<img src="images/demoday/demoday6.png" class="hide" alt="Papercuts box, packaging, Rip, and Poster">
+					<img src="images/demoday/demoday7.png" class="hide" alt="Papercuts Packaging: Instruction Booklet and USB game">
+					<img src="images/demoday/demoday8.png" class="hide" alt="Instruction Booklet">
+					<img src="images/demoday/demoday10.jpg" class="hide" alt="Olive the DigiSquid Crew">
+				</div>
+				<div id="left-arrow"></div>
+				<div id="right-arrow"></div>
+				<div id="caption">The setup at Demo Day: Poster, T-Shirts, Packaging, and model Rip</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="photo photo5" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+
+	<div class="main-content">
+		<div id="digisquid" align="center">
+			<img src="images/developers/squidslogo.png">
+			<div class="squiddiv2">
+				<div class="squiddiv jonathan" align="none">
+					<div class="squidcontent">
+						<h6>Jonathan Lucka</h6>
+						<p>Technical Lead</p>
+						<p><a href="http://jlucka.com/" target="_blank">Portfolio</a></p>
+						<div class="linkedin" href="http://www.linkedin.com/pub/jonathan-lucka/49/b0/201"></div>
+						<!-- <div class="github" href=""></div> -->
+					</div>
+				</div>
+				<div class="squiddiv sydney">
+					<div class="squidcontent">
+						<h6>Sydney Richardson</h6>
+						<p>Aesthetic Lead</p>
+						<p><a href="http://sydneyrichardson.me/" target="_blank">Portfolio</a></p>
+						<div class="linkedin" href="http://www.linkedin.com/pub/sydney-richardson/39/249/729"></div>
+						<div class="github" href="https://github.com/ssyyddnneeyy"></div>
+					</div>
+				</div>
+				<div class="squiddiv annie">
+					<div class="squidcontent">
+						<h6>Annie Alford</h6>
+						<p>Acoustic Lead</p>
+						<p><a href="" target="_blank">Portfolio</a></p>
+						<div class="linkedin" href="www.linkedin.com/pub/anne-alford/65/673/669/"></div>
+						<!-- <div class="github" href=""></div> -->
+					</div>
+				</div>
+				<div class="squiddiv jess">
+					<div class="squidcontent">
+						<h6>Jess Bodzo</h6>
+						<p>Story Lead</p>
+						<p><a href="http://sjbodzo.com/" target="_blank">Portfolio</a></p>
+						<div class="linkedin" href="www.linkedin.com/pub/jess-bodzo/75/67a/492"></div>
+						<!-- <div class="github" href=""></div> -->
+					</div>
+				</div>
+			</div>
+			<div style="height: 210px; width: 100%;"></div>
+		</div>
+	</div>
+
+	<div class="photo photo6" data-stellar-background-ratio="0.5" style="background-position-x: 50%;"></div>
+	<div class="main-content">
+		<footer> Website &copy; 2013 Sydney Richardson, all other content &copy; 2013 DigiSquid </footer>
+	</div>
+	<script src="scripts/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+
+</html>

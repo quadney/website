@@ -1,0 +1,663 @@
+html{
+	overflow-x: hidden;
+}
+body {
+	background: url("images/natural.jpg") no-repeat;
+	color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:14;
+	margin: 0px;
+	padding: 0px;
+	left: 0;
+	top: 0;
+	right: 0;
+	background-attachment: fixed; 
+	overflow-x: hidden;
+}
+h2{
+	font-size: 1.7em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+h6{
+	font-size: 1.2em;
+	margin-top: .25em;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+p{
+	text-align: left;
+}
+.top{
+	width: 100%;
+	height: 300px;
+	position: fixed;
+}
+#scene{
+	height: 915px;
+	width: 100%;
+	margin: 0px;
+	top: 0;
+	left: 0;
+	padding: 0px;
+	z-index: 100;
+}
+ul, li{
+	list-style: none;
+	left: 0;
+	padding: 0px;
+	margin: 0px;
+}
+.layer img{
+	display: block;
+}
+#background{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow-x: hidden;
+}
+#fire{
+	top: 300px;
+  	position: absolute;
+  	left: 30px;
+}
+#witch{
+	top: 6px;
+  	position: absolute;
+  	left: -37px;
+}
+#pug{
+	bottom: 120px;
+  	position: absolute;
+  	left: 5%;
+}
+#dad{
+	bottom: 75px;
+  	position: absolute;
+  	left: 10%;
+}
+#becca{
+	bottom: 75px;
+  	position: absolute;
+  	left: 8%;
+}
+#tess{
+	bottom: 80px;
+  	position: absolute;
+  	left: 20%;
+}
+#rip{
+	top: 64px;
+  	position: absolute;
+  	right: 20%;
+}
+header{
+	position: relative;
+	margin-bottom: 100px;
+}
+footer {
+	text-align: center;
+	padding-top: 140px;
+	height: 50px;
+}
+header a#logo{
+	background: url("images/logo.png") no-repeat;
+	height: 140px;
+	width: 100%;
+	display: block; 
+	background-position: center;
+	position: relative;
+}
+.headerFixed{
+	background-image: url("images/papercutsLogo22.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 100px;
+    position : fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px #151513;
+}
+.navFixed{
+	position: fixed;
+    margin-top: 150px;
+}
+.logoFixed{
+	position: fixed !important;
+	height: 180px !important;
+}
+#filler{
+	height: 320px;
+	display: none;
+}
+nav {
+	height: auto;
+	width: 100%;
+	margin-left: 15px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+nav a {
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 12px 30px 20px 0px;
+}
+
+nav a:hover{ color: grey }
+
+.main-content {
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+.photo {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 350px;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+.photo1{
+	background-image: url(images/screenshots/screenshot_01.png);
+}
+.photo2{
+	background-image: url(images/screenshots/screenshot_02.png);
+}
+.photo3{
+	background-image: url(images/screenshots/screenshot_03.png);
+}
+.photo4{
+	background-image: url(images/screenshots/screenshot_04.png);
+}
+.photo5{
+	background-image: url(images/screenshots/screenshot_05.png);
+}
+.photo6{
+	background-image: url(images/screenshots/screenshot_06.png);
+}
+
+#play, #storyline, #demoday, #digisquid {
+ 	margin-top: 100px;
+ 	margin-bottom: 100px;
+}
+#tooSmall{
+	display: none;
+}
+#storyline, #demoday{
+	height: 500px;
+}
+.left_Paragraph{
+	width: 350px;
+	margin-right: 20px;
+	position: relative;
+	float: left;
+}
+.paragraph{
+	width: 49%;
+	margin-right: 20px;
+	position: relative;
+}
+.slideshowContainer{
+	width: 600px;
+	position: relative;
+	height: 400px;
+	float: right;
+}
+#slideshow{
+	min-height: 370px;
+	max-height: 370px;
+}
+#left-arrow{
+	top: -220px;
+	position: relative;
+	float: left;
+	opacity: 0.8;
+	z-index: 1;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 24px solid red;
+	border-bottom: 25px solid transparent;
+}
+#left-arrow:hover{
+	opacity: 1.0;
+	border-top: 25px solid transparent;
+	border-right: 24px solid #8C1717;
+	border-bottom: 25px solid transparent;
+}
+#right-arrow{
+	top: -220px;
+	position: relative;
+	float: right;
+	opacity: 0.8;
+	z-index: 1;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 24px solid red;
+	border-bottom: 25px solid transparent;
+}
+#right-arrow:hover{
+	opacity: 1.0;
+	border-top: 25px solid transparent;
+	border-left: 24px solid #8C1717;
+	border-bottom: 25px solid transparent;
+}
+#caption{
+	font-weight: bold;
+}
+#digisquid p{
+	text-align: center;
+}
+
+#tshirt {
+	background: url("images/tshirt.png") no-repeat;
+	background-position: center;
+	height: 350px;
+	margin: 0px 140px 0px 140px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.squiddiv2{
+	width:  900px;
+	margin-top: 50px;
+}
+.squiddiv {
+	height: 300px;
+	width:  25%;
+	margin: 5px 0px 5px 0px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	box-sizing: border-box;
+}
+.squidcontent { 
+	padding-top: 105px; 
+}
+.squiddiv p { 
+	font-size: 1em; 
+	line-height: 1em;
+}
+.squiddiv.jonathan{ background-image: url("images/developers/dev_01.png"); }
+.squiddiv.sydney{ background-image: url("images/developers/dev_02.jpg"); }
+.squiddiv.annie{ background-image: url("images/developers/dev_03.png"); }
+.squiddiv.jess{ background-image: url("images/developers/dev_04.jpg"); }
+
+.linkedin{
+	background: url("images/developers/linkedin.png") no-repeat;
+	height: 45px;
+	width: 45px;
+	position: relative;
+	float: left;
+	margin-left: 60px;
+}
+.github{
+	background: url("images/developers/github.png") no-repeat;
+	height: 45px;
+	width: 45px;
+	position: relative;
+	margin-left: 60px;
+}
+
+div#unityPlayer {
+	cursor: default;
+	height: 600px;
+	width: 960px;
+	display: auto;
+}
+div.content {
+	margin: auto;
+	width: 960px;
+}
+div.broken, div.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+}
+div.broken a, div.missing a {
+	height: 63px;
+	position: relative;
+	top: -31px;
+}
+div.broken img, div.missing img {
+	border-width: 0px;
+}
+div.broken {
+	display: none;
+}
+.hide{
+	display: none;
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+	.main-content {
+		width: 760px;
+	}
+	div#unityPlayer {
+		width: 760px;
+		height: 506px;
+	}
+	.squiddiv2{
+		width:  760px;
+	}
+	.left_Paragraph{
+		width: 98%;
+		margin-right: 0px;
+		float: none;
+	}
+	.paragraph{
+		width: 98%;
+		margin-right: 0px;
+	}
+	.slideshowContainer{
+		float: none;
+		margin-bottom: 30px;
+	}
+	.linkedin{
+		margin-left: 40px;
+	}
+	.github{
+		margin-left: 50px;
+	}
+	#background{
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow-x: hidden;
+	}
+	#fire{
+		top: 300px;
+	  	left: 10px;
+	}
+	#witch{
+		top: 6px;
+	  	left: -37px;
+	}
+	#becca{
+		bottom: 75px;
+	  	left: 0%;
+	}
+	#tess{
+		bottom: 80px;
+	  	left: 25%;
+	}
+	#rip{
+		top: 100px;
+	  	right: 0%;
+	}
+
+}
+@media only screen and (min-width: 600px) and (max-width: 767px){
+	.main-content {
+		width:100%;
+		margin: 0 auto;
+	}
+	.left_Paragraph{
+		width: 98%;
+		margin-right: 0px;
+		float: none;
+	}
+	.paragraph{
+		width: 98%;
+		margin-right: 0px;
+	}
+	.slideshowContainer{
+		float: none;
+		margin-bottom: 30px;
+	}
+	div#unityPlayer{
+		display: none;
+	}
+	#tooSmall{
+		display: block;
+	}
+	.squiddiv {
+		height: 160px;
+		width:  49%;
+		margin: 5px 0px 5px 0px;
+		background-position-x: 15px;
+		text-align: left !important;
+	}
+	.squiddiv2{
+		width:  100%;
+	}
+	h6{
+		text-align: left;
+	}
+	.squidcontent { 
+		padding-top: 0px;
+		padding-left: 125px;
+	}
+	#digisquid p{
+		text-align: left;
+	}
+	.headerFixed{
+	    height: 150px;
+	}
+	.navFixed{
+	    margin-top: 90px;
+	}
+	.logoFixed{
+		position: fixed !important;
+		height: 113px !important;
+	}
+	header a#logo{
+		background: url("images/logo2.png") no-repeat;
+		height: 77px;
+		background-position: center;
+	}
+	#filler{
+		height: 320px;
+		display: none;
+	}
+	nav {
+		margin-left: 5px;
+	}
+	nav a {
+		color: black;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.5em;
+		margin: 12px 15px 20px 0px;
+	}
+	.linkedin{
+		margin-left: 0px;
+	}
+	.github{
+		margin-left: 50px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 599px){
+	.main-content {
+		width:100%;
+		margin: 0 auto;
+	}
+	div#unityPlayer{
+		display: none;
+	}
+	#tooSmall{
+		display: block;
+	}
+	.left_Paragraph{
+		width: 98%;
+		margin-right: 0px;
+		float: none;
+	}
+	.paragraph{
+		width: 98%;
+		margin-right: 0px;
+	}
+	.slideshowContainer{
+		float: none;
+		margin-bottom: 30px;
+	}
+	.squiddiv {
+		height: 160px;
+		width:  100%;
+		margin: 5px 0px 5px 0px;
+		background-position-x: 30px;
+		float: none;
+		text-align: left !important;
+	}
+	.squiddiv2{
+		width:  100%;
+	}
+	h6{
+		text-align: left;
+	}
+	.squidcontent { 
+		padding-top: 0px;
+		padding-left: 160px;
+	}
+	#digisquid p{
+		text-align: left;
+	}
+	.headerFixed{
+	    height: 150px;
+	}
+	.navFixed{
+	    margin-top: 90px;
+	}
+	.logoFixed{
+		position: fixed !important;
+		height: 113px !important;
+	}
+	header a#logo{
+		background: url("images/logo2.png") no-repeat;
+		height: 77px;
+		background-position: center;
+	}
+	#filler{
+		height: 320px;
+		display: none;
+	}
+	nav {
+		margin-left: 5px;
+	}
+	nav a {
+		color: black;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.5em;
+		margin: 12px 15px 20px 0px;
+	}
+	.linkedin{
+		margin-left: 0px;
+	}
+	.github{
+		margin-left: 50px;
+	}
+}
+@media only screen and (max-width: 479px) {
+		.main-content {
+		width:100%;
+		margin: 0 auto;
+	}
+	.left_Paragraph{
+		width: 98%;
+		margin-right: 0px;
+		float: none;
+	}
+	.paragraph{
+		width: 98%;
+		margin-right: 0px;
+	}
+	.slideshowContainer{
+		
+	}
+	.squiddiv {
+		height: 160px;
+		width:  100%;
+		margin: 5px 0px 5px 0px;
+		float: none;
+		background-position-x: 30px;
+		text-align: left !important;
+	}
+	.squiddiv2{
+		width:  100%;
+	}
+	h6{
+		text-align: left;
+	}
+	.squidcontent { 
+		padding-top: 0px;
+		padding-left: 160px;
+	}
+	#digisquid p{
+		text-align: left;
+	}
+	.headerFixed{
+	    height: 120px;
+	}
+	.navFixed{
+	    margin-top: 56px;
+	}
+	.logoFixed{
+		position: fixed !important;
+		height: 113px !important;
+	}
+	header a#logo{
+		background: url("images/logo3.png") no-repeat;
+		height: 74px !important;
+		background-position: center;
+	}
+	#filler{
+		height: 320px;
+		display: none;
+	}
+	div#unityPlayer{
+		display: none;
+	}
+	#tooSmall{
+		display: block;
+	}
+	nav {
+		margin-left: 5px;
+	}
+	nav a {
+		color: black;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.2em;
+		margin: 12px 10px 20px 0px;
+	}
+	#storyline, #demoday {
+		height: auto;
+	}
+	#tshirt{
+		margin: 0 auto;
+	}
+	.linkedin{
+		margin-left: 0px;
+	}
+	.github{
+		margin-left: 50px;
+	}
+}

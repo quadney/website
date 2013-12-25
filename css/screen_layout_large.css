@@ -62,6 +62,11 @@ nav a{
 	background-repeat: no-repeat; 
 	background-position: 30px 45px; 
 }
+#projects #databases { 
+	background-image: url("../images/project_banner_06.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
 
 #manifesto .paragraph{
 	height: 350px;

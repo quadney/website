@@ -47,11 +47,12 @@ nav a{
 #projects .project_content{
 	width: 95%;
 }
-#projects #todolist { background-position: center 45px; }
+#projects #todolist { background-position: 0px 45px; }
 #projects #papercuts{background-position: center 45px; }
-#projects #library { background-position: center 45px; }
-#projects #fractal { background-position: center 45px; }
+#projects #library { background-position: 0px 45px; }
+#projects #fractal { background-position: 0px 45px; }
 #projects #artwork { background-position: center 45px; }
+#projects #databases { background-position: 0px 45px; }
 #manifesto .paragraph{
 	height: 950px;
 }

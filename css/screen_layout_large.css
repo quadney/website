@@ -67,6 +67,11 @@ nav a{
 	background-repeat: no-repeat; 
 	background-position: 30px 45px; 
 }
+#projects #daswebsite { 
+	background-image: url("../images/project_banner_07.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px; 
+}
 
 #manifesto .paragraph{
 	height: 350px;

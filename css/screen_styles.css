@@ -166,16 +166,13 @@ nav a:hover{
 	border: 1px solid #087912;
 	padding: 15px 20px;
 	font-weight: 300;
-	color: black;
+	color: black !important;
 	margin-bottom: 30px;
 }
 .launchButton:hover{
 	background-color: #d9fadc;
 	color: #087912;
 	font-weight: 400;
-}
-.launchButton a{
-	color: black;
 }
 #projects h3{
 	background-color: #d9fadc;

@@ -301,7 +301,7 @@ class LinePaper {
     //draw written words
     pg.textFont(font16, 16);
     pg.textAlign(LEFT, TOP);
-    pg.text(typeStuff, xBound+1, 119, innerWidth, innerHeight);
+    pg.text((String)typeStuff, xBound+1, 119, innerWidth, innerHeight);
     
     pg.endDraw();
     
@@ -378,7 +378,7 @@ boolean startedTyping = false;
 int msOfLastKeyRelease = 0;
 LinePaper linePaper;
 GeneratedArt gen;
-String typeStuff = "";
+String typeStuff = "I hate myself";
 PGraphics generatedImage;
 PGraphics linePaperImage;
 int tooBored = 0;
@@ -389,13 +389,6 @@ int tooBored = 0;
 void setup() {
   //draw notebook paper
   size(609, 800);
-  
-//  menuBar = new MenuBar();
-//  fileMenu = new Menu("File");
-//  save = new MenuItem("Save");
-//  fileMenu.add(save);
-//  menuBar.add(fileMenu);
-//  frame.setMenuBar(menuBar);
   
   linePaperImage = createGraphics(609, 800);
   linePaper = new LinePaper(609, 800, linePaperImage);
@@ -426,19 +419,23 @@ void draw() {
   }
 }
 void keyReleased() {
+  String shittyShit = key;
+  msOfLastKeyRelease = millis();
+  println(typeStuff);
   if (!startedTyping) {
     startedTyping = true;
-    typeStuff = ""+key;
+    typeStuff += ""+ (char) shittyShit;
     gen.newDrawing();
   }
-  else if (keyCode == 8) {
+  else if (keyCode == BACKSPACE) {
     //delete the last character
     typeStuff.deleteCharAt(typeStuff.length-1);
   }
-  else if(keyCode == 16){
+  else if (keyCode == SHIFT){
   }
   else{
-    typeStuff = typeStuff+""+key;
+    typeStuff += ""+shittyShit;
+    println(shittyShit);
     gen.newDrawing();
   }
   

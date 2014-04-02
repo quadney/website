@@ -250,7 +250,7 @@ class LinePaper {
   int innerHeight;
   String title = "Note Art";
   PFont font24, font16;
-  StringBuffer typeStuff;
+  String typeStuff;
   PGraphics pg;
   
   LinePaper(int width, int height, PGraphics graphics){
@@ -259,7 +259,7 @@ class LinePaper {
     font16 = loadFont("Avenir-Book-16.vlw");
     innerWidth = width - xBound*2;
     innerHeight = height - 119;
-    typeStuff = new StringBuffer("Start Typing...");
+    typeStuff = "Start Typing...";
     drawNotebookStuff(typeStuff);
     
     drawGeneratedArts();
@@ -268,7 +268,7 @@ class LinePaper {
   void drawGeneratedArts(){
   }
   
-  void drawNotebookStuff(StringBuffer strings) {
+  void drawNotebookStuff(String strings) {
     this.setTypeStuff(strings);
     pg.beginDraw();
     pg.background(255);
@@ -301,14 +301,14 @@ class LinePaper {
     //draw written words
     pg.textFont(font16, 16);
     pg.textAlign(LEFT, TOP);
-    pg.text(typeStuff.toString(), xBound+1, 119, innerWidth, innerHeight);
+    pg.text(typeStuff, xBound+1, 119, innerWidth, innerHeight);
     
     pg.endDraw();
     
     msOfLastKeyRelease = millis();
   }
 
-  void setTypeStuff(StringBuffer words){
+  void setTypeStuff(String words){
     typeStuff = words;
   }
 }
@@ -378,7 +378,7 @@ boolean startedTyping = false;
 int msOfLastKeyRelease = 0;
 LinePaper linePaper;
 GeneratedArt gen;
-StringBuffer typeStuff = new StringBuffer();
+String typeStuff = "";
 PGraphics generatedImage;
 PGraphics linePaperImage;
 int tooBored = 0;
@@ -428,22 +428,22 @@ void draw() {
 void keyReleased() {
   if (!startedTyping) {
     startedTyping = true;
-    typeStuff = new StringBuffer(""+key);
+    typeStuff = ""+key;
     gen.newDrawing();
   }
   else if (keyCode == 8) {
     //delete the last character
-    typeStuff.deleteCharAt(typeStuff.length()-1);
+    typeStuff.deleteCharAt(typeStuff.length-1);
   }
   else if(keyCode == 16){
   }
   else{
-    typeStuff.append(""+key);
+    typeStuff = typeStuff+""+key;
     gen.newDrawing();
   }
   
-  if(typeStuff.length() == 0){
-    typeStuff.append("Start Typing...");
+  if(typeStuff.length == 0){
+    typeStuff = "Start Typing...";
     startedTyping = false;
   }
   linePaper.drawNotebookStuff(typeStuff);

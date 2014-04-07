@@ -378,7 +378,7 @@ boolean startedTyping = false;
 int msOfLastKeyRelease = 0;
 LinePaper linePaper;
 GeneratedArt gen;
-String typeStuff = "I hate myself";
+String typeStuff = "";
 PGraphics generatedImage;
 PGraphics linePaperImage;
 int tooBored = 0;
@@ -419,23 +419,22 @@ void draw() {
   }
 }
 void keyReleased() {
-  String shittyShit = key;
   msOfLastKeyRelease = millis();
-  println(typeStuff);
   if (!startedTyping) {
     startedTyping = true;
-    typeStuff += ""+ (char) shittyShit;
+    typeStuff = typeStuff.concat(key.toString());
     gen.newDrawing();
   }
-  else if (keyCode == BACKSPACE) {
+  else if (keyCode == BACKSPACE || keyCode == DELETE) {
     //delete the last character
+    println("delete key");
     typeStuff.deleteCharAt(typeStuff.length-1);
   }
-  else if (keyCode == SHIFT){
+  else if (keyCode == SHIFT || keyCode == 16){
+    println("shift key");
   }
-  else{
-    typeStuff += ""+shittyShit;
-    println(shittyShit);
+  else if ( keyCode >=49 && keyCode <= 222 && keyCode != 157 || keyCode == 32 || keyCode == 10){
+    typeStuff = typeStuff.concat(key.toString());
     gen.newDrawing();
   }
   
@@ -454,4 +453,5 @@ void refreshDrawing(){
 void saveImage(){
   save("Note_Art.pdf");
 }
+
 

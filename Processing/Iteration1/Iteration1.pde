@@ -427,11 +427,9 @@ void keyReleased() {
   }
   else if (keyCode == BACKSPACE || keyCode == DELETE) {
     //delete the last character
-    println("delete key");
     typeStuff.deleteCharAt(typeStuff.length-1);
   }
   else if (keyCode == SHIFT || keyCode == 16){
-    println("shift key");
   }
   else if ( keyCode >=49 && keyCode <= 222 && keyCode != 157 || keyCode == 32 || keyCode == 10){
     typeStuff = typeStuff.concat(key.toString());

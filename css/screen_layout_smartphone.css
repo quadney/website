@@ -32,6 +32,12 @@ nav a{
 	line-height: 37px;
 	padding: 7px 10px;
 }
+ul{
+	padding-left: 20px;
+}
+li{
+	padding-bottom: 5px;
+}
 .content{
 	top: 151px;
 	position: relative;

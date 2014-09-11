@@ -72,6 +72,26 @@ nav a{
 	background-repeat: no-repeat; 
 	background-position: 30px 45px; 
 }
+#projects #beautifyGNV {
+	background-image: url("../images/project_banner_08.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px;
+}
+#projects #iteration1 {
+	background-image: url("../images/project_banner_09.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px;
+}
+#projects #lectureLoot {
+	background-image: url("../images/project_banner_10.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px;
+}
+#projects #oopJava {
+	background-image: url("../images/project_banner_11.png");
+	background-repeat: no-repeat; 
+	background-position: 30px 45px;
+}
 
 #manifesto .paragraph{
 	height: 350px;

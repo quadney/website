@@ -52,10 +52,14 @@ li{
 	width: 650px;
 }
 
-#projects #todolist { background: url("../images/project_banner_01.png") 0px 45px no-repeat; }
-#projects #papercuts{background: url("../images/project_banner_02.png") 0px 45px no-repeat; }
-#projects #library { background: url("../images/project_banner_03.png") 0px 45px no-repeat; }
-#projects #fractal { background: url("../images/project_banner_04.png") 0px 45px no-repeat; }
-#projects #artwork { background: url("../images/project_banner_05.png") 0px 45px no-repeat; }
-#projects #databases { background: url("../images/project_banner_06.png") 0px 45px no-repeat; }
-#projects #daswebsite { background: url("../images/project_banner_07.png") 0px 45px no-repeat; }
+#projects #todolist { 		background: url("../images/project_banner_01.png") 0px 45px no-repeat; }
+#projects #papercuts{		background: url("../images/project_banner_02.png") 0px 45px no-repeat; }
+#projects #library { 		background: url("../images/project_banner_03.png") 0px 45px no-repeat; }
+#projects #fractal { 		background: url("../images/project_banner_04.png") 0px 45px no-repeat; }
+#projects #artwork { 		background: url("../images/project_banner_05.png") 0px 45px no-repeat; }
+#projects #databases { 		background: url("../images/project_banner_06.png") 0px 45px no-repeat; }
+#projects #daswebsite { 	background: url("../images/project_banner_07.png") 0px 45px no-repeat; }
+#projects #beautifyGNV { 	background: url("../images/project_banner_08.png") 0px 45px no-repeat; }
+#projects #iteration1 { 	background: url("../images/project_banner_09.png") 0px 45px no-repeat; }
+#projects #lectureLoot { 	background: url("../images/project_banner_10.png") 0px 45px no-repeat; }
+#projects #oopJava { 		background: url("../images/project_banner_11.png") 0px 45px no-repeat; }

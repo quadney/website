@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>Enterprise Rental Car Booking</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/screen_styles.css"/>
+
+		<script src="scripts/jquery-2.1.1.min.js"></script>
+		<script src="scripts/main.js" type="text/javascript"></script>	
+	</head>
+
+	<body>
+		<header>
+			<div class="back_arrow hidden" id="back_arrow" onclick="goBack();"></div>
+			<div class="logo"></div>
+		</header>
+
+		<div id="index">
+			<div class="main_container">
+				<input type="text" placeholder="Enterprise Plus Member#" value=""/>
+				<input type="text" placeholder="Password" value=""/>
+				<div class="button disable" href="login.html">Login</div>
+
+				<div class="spacing"></div>
+
+				<div class="button" href="join.html">Join Enterprise Plus</div>
+				<div class="button_green" onclick="continueAsGuest();">Continue as Guest</div>
+			</div>
+		</div>
+
+
+		<div id="guest" class="hidden">
+			<div class="main_container">
+				<h2>Enterprise</h2>
+				<h3>We'll pick you up</h3>
+				<img src="images/personRentingCar.jpg"/>
+			
+				<div class="button_green" onclick="rentCar();">Rent a Car</div>
+				<div class="button" onClick="existingReservations();">Existing Reservations</div>
+			</div>
+		</div>
+
+
+		<div id="rent_car" class="hidden">
+			<div class="main_container">
+				<h2>Pick Up</h2>
+				<input type="text" placeholder="Location" value=""/>
+				<input class="half" type="date" id="pickup_date"/>
+				<input class="half" type="time" id="pickup_time"/>
+				
+				<div class="spacing"></div>
+				<h2>Return</h2>
+
+				<div class="button_green" id="diffLocButton" onClick="diffLocation();">Returning to Different Location?</div>
+				<input type="text" placeholder="Return Location" value="" id="return_location" class="hidden"/>
+
+				<input class="half" type="date" name="return_date">
+				<input class="half" type="time" name="return_time">
+
+				<input type="number" min="18" placeholder="Age"/>
+
+				<input type="text" placeholder="Coupon code" value=""/>
+				
+				<div class="button_green" onclick="selectCar();">Continue</div>
+			</div>
+		</div>
+
+
+		<div id="select_car" class="hidden">
+			<div class="main_container">
+				<h2>Select your car</h2>
+				<ul id="car_list">
+				</ul>
+				
+				<div class="button_green" onclick="userInfo();">Continue</div>
+			</div>
+		</div>
+
+
+		<div id="user_info" class="hidden">
+			<div class="main_container">
+				<h2>Renter's Details</h2>
+				<input type="text" id="username" placeholder="First and Last Name"/>
+				<input type="number" id="phonenumber" placeholder="Phone Number"/>
+				<input type="email" id="email" placeholder="your@email.com"/>
+				<input type="text" placeholder="creditcard"/>
+
+				<div class="button_green" onclick="summary();">Continue</div>
+			</div>
+		</div>
+
+
+		<div id="summary" class="hidden">
+			<div class="main_container">
+				<h2>Summary</h2>
+				<div id="car">
+					<h3 id="carClass">Compact</h3>
+				</div>
+				<div id="pickUp">
+					<h3 id="pickUpDate">Oct 3</h3>
+					<h3 id="pickUpTime">noon</h3>
+					<h3 id="pickUpLocation">MIA</h3>
+				</div>
+				<div id="return">
+					<h3 id="returnDate">Oct 3</h3>
+					<h3 id="returnTime">noon</h3>
+					<h3 id="returnLocation" class="hidden">PHX</h3>
+				</div>
+				<h3 id="carTotal">$50</h3>
+
+				<div id="additionalFeatures">
+					
+				</div>
+				<div id="taxes">
+					
+				</div>
+
+				<h2 id="total">Total: $100</h2>
+				
+				<div class="button_green" onclick="submit();">Book It!</div>
+			<div class="main_container">
+		</div>
+
+
+		<div id="email_sent" class="hidden">
+			<div class="main_container">
+				<h2>Thank you! Check your inbox for an email confirmation.</h2>
+			</div>
+		</div>
+	</body>
+</html>
